@@ -30,13 +30,10 @@ views/
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/yes20sh/User-Management-Express.js.git
    ```
-2. Navigate to the project directory:
-   ```sh
-   cd <project-directory>
-   ```
-3. Install dependencies:
+
+2. Install dependencies:
    ```sh
    npm install
    ```
