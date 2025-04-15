@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Express Application</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="bg-zinc-900 text-white min-h-screen flex flex-col items-center pt-24">
+
+  <!-- Fixed Navbar -->
+  <div class="nav fixed top-0 w-full bg-zinc-900 py-4 shadow-md z-10">
+    <div class="flex justify-center gap-6 text-zinc-400 font-medium">
+      <a href="/read" class="hover:text-white transition">Read Users</a>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form action="/create" method="post" class="flex flex-col gap-4 p-8 border border-zinc-700 rounded-xl bg-zinc-800 w-full max-w-md">
+    <h1 class="text-xl text-center m-2">Create User</h1>
+    <input class="px-5 py-3 border border-zinc-600 outline-none rounded-lg bg-transparent" type="text" placeholder="Name" name="name">
+    <input class="px-5 py-3 border border-zinc-600 outline-none rounded-lg bg-transparent" type="text" placeholder="Email" name="email">
+    <input class="px-5 py-3 border border-zinc-600 outline-none rounded-lg bg-transparent" type="text" placeholder="Image URL" name="image">
+    <input class="px-5 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-lg cursor-pointer text-white font-semibold" type="submit" value="Create User">
+  </form>
+
+</body>
+</html>
